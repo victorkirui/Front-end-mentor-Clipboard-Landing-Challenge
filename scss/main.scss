@@ -2,16 +2,14 @@
 @import "./utilities";
 @import "./buttons";
 
-
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-}
 body,html{
+    max-width:1440px;
     font-size:18px;
     height:100%;
     height:100%;
+}
+h1,h2,h3,p,a{
+    font-family: $font-stack;
 }
 h1,h2,h3{
     color:$dark-grayish-blue;
@@ -19,9 +17,6 @@ h1,h2,h3{
 }
 p{
     color:$grayish-blue;
-}
-h1,h2,h3,p,a{
-    font-family: $font-stack;
 }
 header{
     background: url('../images/bg-header-mobile.png');
@@ -74,13 +69,45 @@ main{
     img{
         width:40%;
         margin:18px auto;
+        height:30px;
     }
     
 }
 
+footer{
+    background:lighten($grayish-blue,30%);
+
+    .links-container{
+        @include flex-center(column);
+        .links{
+            img{
+                width:50px;
+            }
+            a{
+                text-decoration: none;
+                color:$grayish-blue;
+                &:hover{
+                    color:$primary-color; 
+                }
+            }
+        }
+    }
+    .socials{
+        @include flex-center(row);
+        img:hover{
+            color:$primary-color;
+        }
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 36px;
+    a { 
+        color: $secondary-color;
+    }
+}
 
 
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@import "./responsive";
