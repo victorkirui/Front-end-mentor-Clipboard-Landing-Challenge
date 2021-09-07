@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+// PRIMARY
+$primary-color: hsl(171, 66%, 44%);
+$secondary-color: hsl(233, 100%, 69%);
+// NEUTRAL
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+$font-stack:'Bai Jamjuree', sans-serif;
+
+
+@mixin flex-center($direction){
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: $direction;
+}

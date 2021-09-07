@@ -1,0 +1,86 @@
+@import './config';
+@import "./utilities";
+@import "./buttons";
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body,html{
+    font-size:18px;
+    height:100%;
+    height:100%;
+}
+h1,h2,h3{
+    color:$dark-grayish-blue;
+    line-height:2rem;
+}
+p{
+    color:$grayish-blue;
+}
+h1,h2,h3,p,a{
+    font-family: $font-stack;
+}
+header{
+    background: url('../images/bg-header-mobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include flex-center(column);
+    text-align: center;
+    img{
+        width:80px;
+    }
+}
+
+main{
+    .showcase{
+        text-align: center;
+    }
+}
+
+.wrapper{
+    img{
+        width:100%;
+        padding:0 36px;
+    }
+    .card-wrapper{
+        .card{
+            text-align:center;
+        }
+    }
+}
+
+.devices{
+    width:100%;
+    margin:0 auto;
+}
+
+.blurbs-container{
+    .blurb{
+        @include flex-center(column);
+        img{
+            width:30px;
+            margin:18px auto;
+        }
+    }
+}
+
+.our-partners{
+    @include flex-center(column);
+    img{
+        width:40%;
+        margin:18px auto;
+    }
+    
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
