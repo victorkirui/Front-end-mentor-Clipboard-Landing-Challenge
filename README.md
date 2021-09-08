@@ -16,7 +16,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Original Design](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site url](https://jolly-poincare-065667.netlify.app/)
 
 
 ### Built with
